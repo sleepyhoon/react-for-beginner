@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import Movie from "../Components/Movie";
+import Loading from "../Components/Loading";
 
 function Home(){
   const [loading,setLoading] = useState(true); // 이 함수가 실행되면 re-rendering
@@ -16,7 +17,7 @@ function Home(){
     getMovies();
   }, [])
   return <div>
-    {loading ? <strong>Loading....</strong> : 
+    {loading ? <Loading/> : 
     <div>
       {movies.map((movie) =>(
         <Movie 

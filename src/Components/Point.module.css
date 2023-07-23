@@ -1,0 +1,48 @@
+.bg {
+    position: fixed;
+    top:0;
+    left:0;
+}
+.clr{
+    color:white;
+}
+.show{
+    position: absolute;
+    top:20%;
+    left:20%;
+    z-index:8; /*이미지가 겹칠경우 위아래를 정해줌. 정수숫자가 클수록 위에 위치함*/
+    display: flex;
+    align-items: center;
+}
+.img{
+    height: 345px;
+}
+
+.textbox {
+    padding: 0 16px 0 32px; /*시계방향으로 하면됨*/
+    width: 300px;
+    height: 345px;
+}
+.title {
+    font-weight: bold;
+    font-size:28px;
+}
+.title:hover { /*:hover 가상 클래스는 주로 링크(<a>) 요소에 사용되어 링크에 마우스를 올렸을 때 시각적인 효과를 부여*/
+    text-decoration: underline;
+}
+
+.title a{
+    color: white;
+    text-decoration: none;
+}
+
+.title ul{
+    padding: 0 0 0 20px;
+    color: white;
+    font-size: 18px;
+}
+.textbox p{
+    color : whitesmoke;
+    font-size: 18px;
+    font-weight: 300;
+}
